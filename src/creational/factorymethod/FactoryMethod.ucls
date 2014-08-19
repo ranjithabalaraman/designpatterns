@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true">  
   <class id="1" language="java" name="creational.factorymethod.Application" project="design-patterns" 
     file="/design-patterns/src/creational/factorymethod/Application.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="467" y="83"/>    
+    <position height="-1" width="-1" x="537" y="177"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,59 +12,72 @@
   </class>  
   <interface id="2" language="java" name="creational.factorymethod.Currency" project="design-patterns" 
     file="/design-patterns/src/creational/factorymethod/Currency.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="253" y="357"/>    
+    <position height="-1" width="-1" x="285" y="485"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="3" language="java" name="creational.factorymethod.CurrencyFactory" project="design-patterns" 
-    file="/design-patterns/src/creational/factorymethod/CurrencyFactory.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="256" y="84"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
-      visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="4" language="java" name="creational.factorymethod.Rupee" project="design-patterns" 
+  <class id="3" language="java" name="creational.factorymethod.Rupee" project="design-patterns" 
     file="/design-patterns/src/creational/factorymethod/Rupee.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="253" y="227"/>    
+    <position height="-1" width="-1" x="285" y="355"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="creational.factorymethod.SGDDollar" project="design-patterns" 
+  <class id="4" language="java" name="creational.factorymethod.SGDDollar" project="design-patterns" 
     file="/design-patterns/src/creational/factorymethod/SGDDollar.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="408" y="227"/>    
+    <position height="-1" width="-1" x="440" y="355"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="creational.factorymethod.USDollar" project="design-patterns" 
+  <class id="5" language="java" name="creational.factorymethod.USDollar" project="design-patterns" 
     file="/design-patterns/src/creational/factorymethod/USDollar.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="98" y="227"/>    
+    <position height="-1" width="-1" x="130" y="355"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <realization id="7">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
+  <interface id="6" language="java" name="creational.factorymethod.CurrencyFactory" project="design-patterns" 
+    file="/design-patterns/src/creational/factorymethod/CurrencyFactory.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="294" y="214"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="7" language="java" name="creational.factorymethod.RupeeFactory" project="design-patterns" 
+    file="/design-patterns/src/creational/factorymethod/RupeeFactory.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="294" y="84"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
   <realization id="8">    
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="2"/>  
   </realization>  
   <realization id="9">    
     <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <realization id="10">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <realization id="11">    
+    <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="2"/>  
   </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
